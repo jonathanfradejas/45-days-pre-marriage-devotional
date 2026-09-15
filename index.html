@@ -10,17 +10,19 @@
 <meta name="apple-mobile-web-app-title" content="45 Days Devotional">
 <title>45 Days Pre Marriage Devotional</title>
 <style>
-:root{--bg:#0B1220;--card:#111827;--card2:#172033;--ink:#F8FAFC;--muted:#94A3B8;--accent:#3B82F6;--accent2:#2563EB;--border:#273449;--good:#102A22;--good-border:#1F6B55;--warn:#2A2112;--warn-border:#8A6720}
-*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at top,#111B2E 0,#0B1220 42%,#080D17 100%);color:var(--ink);min-height:100vh}
-.hidden{display:none!important}.app{max-width:980px;margin:auto;padding:16px}.card{background:rgba(17,24,39,.94);border:1px solid var(--border);border-radius:22px;padding:20px;box-shadow:0 16px 40px rgba(0,0,0,.28)}
-.hero{background:linear-gradient(135deg,#111827 0%,#172554 55%,#1D4ED8 140%);color:#fff;margin-bottom:14px;border-color:#334155}.hero h1{margin:0 0 8px;font-size:clamp(28px,6vw,44px)}
+:root{--bg:#0B1220;--card:#111827;--ink:#F8FAFC;--muted:#94A3B8;--accent:#3B82F6;--border:#334155;--good:#14532D;--warn:#422006}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink)}
+.hidden{display:none!important}.app{max-width:980px;margin:auto;padding:16px}.card{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:20px;box-shadow:0 10px 30px rgba(0,0,0,.22)}
+.hero{background:linear-gradient(135deg,#0F172A,#1E3A8A);color:#fff;margin-bottom:14px}.hero h1{margin:0 0 8px;font-size:clamp(28px,6vw,44px)}
 .grid{display:grid;grid-template-columns:1.4fr .6fr;gap:14px}@media(max-width:760px){.grid{grid-template-columns:1fr}}
-input,textarea,button{font:inherit}input,textarea{width:100%;padding:12px;border:1px solid var(--border);border-radius:12px;background:#0F172A;color:var(--ink);outline:none}input::placeholder,textarea::placeholder{color:#64748B}input:focus,textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(59,130,246,.14)}
-textarea{min-height:105px;resize:vertical}button{border:1px solid #334155;border-radius:12px;padding:11px 14px;font-weight:700;cursor:pointer;background:#1E293B;color:#E2E8F0;transition:.18s ease}button:hover{background:#273449;border-color:#475569}button.primary{background:var(--accent);border-color:var(--accent);color:#fff}button.primary:hover{background:var(--accent2)}
-.row{display:flex;gap:8px;flex-wrap:wrap}.between{display:flex;justify-content:space-between;gap:10px;align-items:center}.status{padding:10px;border:1px solid var(--border);border-radius:12px;background:var(--card2);margin:8px 0}.good{background:var(--good);border-color:var(--good-border)}.warn{background:var(--warn);border-color:var(--warn-border)}
-.small{font-size:13px;color:var(--muted)}.section{margin-top:18px}.day-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.daybtn{background:#162033}.daybtn.active{outline:2px solid #60A5FA;background:#1E3A8A;color:#DBEAFE}.reading{display:inline-block;padding:9px 11px;border:1px solid #1E40AF;border-radius:12px;background:#172554;color:#BFDBFE;font-weight:750}
-.check{display:flex;gap:10px;align-items:flex-start;padding:10px;border:1px solid var(--border);border-radius:12px;background:#151E2E;margin:8px 0}.check input{width:auto;margin-top:4px;accent-color:var(--accent)}
-.auth{max-width:480px;margin:28px auto}.tabs{display:flex;gap:8px;margin:12px 0}.tabs button{flex:1}.notice{padding:12px;border:1px solid #334155;border-radius:12px;background:#172033;margin:10px 0}.member{display:flex;justify-content:space-between;gap:12px}.progress{height:10px;background:rgba(255,255,255,.12);border-radius:999px;overflow:hidden;margin-top:10px}.progress>div{height:100%;background:linear-gradient(90deg,#60A5FA,#2563EB);width:0%}
+input,textarea,button{font:inherit}input,textarea{width:100%;padding:12px;border:1px solid var(--border);border-radius:12px;background:#0F172A;color:var(--ink)}
+textarea{min-height:105px;resize:vertical}button{border:1px solid var(--border);border-radius:12px;padding:11px 14px;font-weight:700;cursor:pointer;background:#162033;color:var(--ink)}button:disabled{cursor:not-allowed;opacity:.6}
+button.primary{background:var(--accent);color:#fff;border-color:#2563EB}.row{display:flex;gap:8px;flex-wrap:wrap}.between{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.status{padding:10px;border-radius:12px;background:#162033;margin:8px 0}.good{background:#14532D}.warn{background:#3A2507}
+.small{font-size:13px;color:var(--muted)}.section{margin-top:18px}.day-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.daybtn{position:relative;min-height:44px;background:#162033}.daybtn.active{outline:2px solid #60A5FA;outline-offset:2px}.daybtn.done{background:#14532D;color:#DCFCE7;border:1px solid #22C55E}.daybtn.ongoing{background:#1D4ED8;color:#EFF6FF;border:1px solid #60A5FA}.daybtn.locked{background:#111827;color:#64748B;border:1px solid #273449;cursor:not-allowed;opacity:.72}.daybtn .state-icon{display:block;font-size:11px;line-height:1;margin-top:3px}.legend{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}.legend span{display:inline-flex;align-items:center;gap:6px;padding:6px 9px;border-radius:999px;font-size:12px;border:1px solid var(--border)}.legend .done-key{background:#14532D;color:#DCFCE7;border-color:#22C55E}.legend .ongoing-key{background:#1D4ED8;color:#EFF6FF;border-color:#60A5FA}.legend .locked-key{background:#111827;color:#94A3B8}.reading{display:inline-block;padding:9px 11px;border:1px solid #1E40AF;border-radius:12px;background:#172554;color:#BFDBFE;font-weight:750}
+.check{display:flex;gap:10px;align-items:flex-start;padding:10px;border-radius:12px;background:#162033;margin:8px 0}.check input{width:auto;margin-top:4px}
+.auth{max-width:480px;margin:28px auto}.tabs{display:flex;gap:8px;margin:12px 0}.tabs button{flex:1}.notice{padding:12px;border-radius:12px;background:#172554;margin:10px 0}
+.member{display:flex;justify-content:space-between;gap:12px}.progress{height:10px;background:rgba(255,255,255,.16);border-radius:999px;overflow:hidden;margin-top:10px}.progress>div{height:100%;background:#60A5FA;width:0%}
 </style>
 </head>
 <body>
@@ -79,6 +81,7 @@ textarea{min-height:105px;resize:vertical}button{border:1px solid #334155;border
 
     <aside class="card">
       <h3>45-Day Plan</h3>
+      <div class="legend"><span class="done-key">✓ Done</span><span class="ongoing-key">● Ongoing</span><span class="locked-key">🔒 Not started</span></div>
       <div id="daysGrid" class="day-grid"></div>
       <div class="section"><div id="syncState" class="small">Cloud sync ready.</div></div>
     </aside>
@@ -92,35 +95,162 @@ const SUPABASE_URL="https://diurpjhwiaumwtxqruau.supabase.co";
 const SUPABASE_KEY="sb_publishable_9RpdwjqTsOBcAwwsm9qC7Q_CG2jMKi4";
 const VAPID_PUBLIC_KEY="BBjSd46RjTxSIZEC3iT8eIedEs4-WEQkDaZDxG7nCx3oJQLffFCM3kQC4kzCnCB__gkF-15T_ApH46t_vWPtEZQ";
 const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
-let mode='login',user=null,coupleId=null,current=1,days=[],members=[],readStatuses=[],checklist=[],entry=null,reflection=null;
+let mode='login',user=null,coupleId=null,current=1,days=[],members=[],readStatuses=[],checklist=[],entry=null,reflection=null,dayStates={};
 const $=id=>document.getElementById(id);
-const checklistLabels={both_read:'Both read the passage',discuss_questions:'Discuss the reflection questions',share_reflections:'Share what stood out',action_step:'Agree on one action step',pray_together:'Pray together'};
+const checklistLabels={
+  both_read:'Both read the passage',
+  discuss_questions:'Discuss the reflection questions',
+  share_reflections:'Share what stood out',
+  action_step:'Agree on one action step',
+  pray_together:'Pray together'
+};
 function msg(el,text){el.textContent=text;el.classList.remove('hidden')} function clearMsg(el){el.classList.add('hidden');el.textContent=''}
 $("showLogin").onclick=()=>{mode='login';$("authSubmit").textContent='Login';$("showLogin").classList.add('primary');$("showSignup").classList.remove('primary')};
 $("showSignup").onclick=()=>{mode='signup';$("authSubmit").textContent='Sign Up';$("showSignup").classList.add('primary');$("showLogin").classList.remove('primary')};
-$("authSubmit").onclick=async()=>{clearMsg($("authMsg"));const email=$("email").value.trim(),password=$("password").value;if(!email||!password)return msg($("authMsg"),"Enter email and password.");const res=mode==='login'?await sb.auth.signInWithPassword({email,password}):await sb.auth.signUp({email,password});if(res.error)return msg($("authMsg"),res.error.message);if(mode==='signup'&&!res.data.session)return msg($("authMsg"),"Account created. Check your email and confirm it, then login.");await boot()};
+$("authSubmit").onclick=async()=>{clearMsg($("authMsg"));const email=$("email").value.trim(),password=$("password").value;if(!email||!password)return msg($("authMsg"),"Enter email and password.");
+ const res=mode==='login'?await sb.auth.signInWithPassword({email,password}):await sb.auth.signUp({email,password});
+ if(res.error)return msg($("authMsg"),res.error.message);if(mode==='signup'&&!res.data.session)return msg($("authMsg"),"Account created. Check your email and confirm it, then login.");await boot()};
 $("logoutBtn").onclick=async()=>{await sb.auth.signOut();location.reload()};
-$("createCouple").onclick=async()=>{clearMsg($("setupMsg"));const {data,error}=await sb.rpc('create_couple',{p_name:$("coupleName").value,p_join_code:$("createCode").value,p_display_name:$("displayName").value});if(error)return msg($("setupMsg"),error.message);coupleId=data;await loadMain()};
-$("joinCouple").onclick=async()=>{clearMsg($("setupMsg"));const {data,error}=await sb.rpc('join_couple',{p_join_code:$("joinCode").value,p_display_name:$("displayName").value});if(error)return msg($("setupMsg"),error.message);coupleId=data;await loadMain()};
+$("createCouple").onclick=async()=>{clearMsg($("setupMsg"));const {data,error}=await sb.rpc('create_couple',{p_name:$("coupleName").value,p_join_code:$("createCode").value,p_display_name:$("displayName").value});
+ if(error)return msg($("setupMsg"),error.message);coupleId=data;await loadMain()};
+$("joinCouple").onclick=async()=>{clearMsg($("setupMsg"));const {data,error}=await sb.rpc('join_couple',{p_join_code:$("joinCode").value,p_display_name:$("displayName").value});
+ if(error)return msg($("setupMsg"),error.message);coupleId=data;await loadMain()};
 
 function urlBase64ToUint8Array(base64String){const padding='='.repeat((4-base64String.length%4)%4);const base64=(base64String+padding).replace(/-/g,'+').replace(/_/g,'/');const raw=atob(base64);const out=new Uint8Array(raw.length);for(let i=0;i<raw.length;i++)out[i]=raw.charCodeAt(i);return out;}
 async function refreshNotificationButton(){const btn=$("enableNotificationsBtn");if(!('serviceWorker' in navigator)||!('PushManager' in window)){btn.textContent="Notifications unavailable";btn.disabled=true;return;}if(Notification.permission==='denied'){btn.textContent="Notifications blocked";return;}const reg=await navigator.serviceWorker.ready;const sub=await reg.pushManager.getSubscription();btn.textContent=sub?"✅ Notifications On":"🔔 Enable Notifications";}
 $("enableNotificationsBtn").onclick=async()=>{try{if(!user||!coupleId)return alert("Please finish signing in first.");const permission=await Notification.requestPermission();if(permission!=='granted')return alert("Notifications were not enabled. You can allow them later in your browser or iPhone settings.");const reg=await navigator.serviceWorker.ready;let sub=await reg.pushManager.getSubscription();if(!sub){sub=await reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:urlBase64ToUint8Array(VAPID_PUBLIC_KEY)});}const json=sub.toJSON();const {error}=await sb.from('push_subscriptions').upsert({couple_id:coupleId,user_id:user.id,endpoint:json.endpoint,p256dh:json.keys.p256dh,auth:json.keys.auth,user_agent:navigator.userAgent},{onConflict:'endpoint'});if(error)throw error;await refreshNotificationButton();alert("Notifications are enabled on this device.");}catch(e){console.error(e);alert("Could not enable notifications: "+(e?.message||e));}};
 
-async function boot(){const {data:{session}}=await sb.auth.getSession();user=session?.user||null;$("authView").classList.toggle('hidden',!!user);if(!user)return;const {data:ms}=await sb.from('couple_members').select('couple_id,display_name').eq('user_id',user.id).maybeSingle();if(!ms){$("setupView").classList.remove('hidden');return}coupleId=ms.couple_id;await loadMain();}
-async function loadMain(){$("setupView").classList.add('hidden');$("authView").classList.add('hidden');$("mainView").classList.remove('hidden');const [{data:d},{data:m}]=await Promise.all([sb.from('devotional_days').select('*').order('day_number'),sb.from('couple_members').select('user_id,display_name,joined_at').eq('couple_id',coupleId).order('joined_at')]);days=d||[];members=m||[];const me=members.find(x=>x.user_id===user.id);$("welcome").textContent=`Welcome${me?.display_name?' '+me.display_name:''}. Your progress is synced to Supabase.`;const requestedDay=Number(new URLSearchParams(location.search).get("day"));if(requestedDay>=1&&requestedDay<=45)current=requestedDay;await updateProgress();drawDays();await loadDay();await refreshNotificationButton();}
-async function updateProgress(){const {data}=await sb.from('daily_checklist').select('day_number,item_key,completed').eq('couple_id',coupleId).eq('item_key','pray_together').eq('completed',true);const n=new Set((data||[]).map(x=>x.day_number)).size;$("progressText").textContent=`${n} / 45 completed`;$("progressBar").style.width=`${n/45*100}%`;}
-async function loadDay(){$("syncState").textContent="Loading...";const day=days.find(x=>x.day_number===current);if(!day)return;$("dayLabel").textContent=`Day ${current}`;$("theme").textContent=day.theme;$("reading").textContent="📖 "+day.reading;$("focus").textContent=day.focus;$("q1").textContent="1. "+day.question_1;$("q2").textContent="2. "+day.question_2;const [rs,cl,en,re]=await Promise.all([sb.from('daily_member_status').select('*').eq('couple_id',coupleId).eq('day_number',current),sb.from('daily_checklist').select('*').eq('couple_id',coupleId).eq('day_number',current),sb.from('devotional_entries').select('*').eq('couple_id',coupleId).eq('day_number',current).maybeSingle(),sb.from('devotional_reflections').select('*').eq('couple_id',coupleId).eq('day_number',current).eq('user_id',user.id).maybeSingle()]);readStatuses=rs.data||[];checklist=cl.data||[];entry=en.data||null;reflection=re.data||null;$("reflection").value=reflection?.reflection||"";$("sharedNotes").value=entry?.shared_notes||"";$("sharedPrayer").value=entry?.shared_prayer||"";renderReadStatus();renderChecklist();drawDays();$("syncState").textContent="Cloud sync ready.";}
-function renderReadStatus(){$("memberStatuses").innerHTML="";members.forEach(m=>{const r=readStatuses.find(x=>x.user_id===m.user_id);const div=document.createElement("div");div.className="status "+(r?.verse_read?"good":"warn");div.innerHTML=`<div class="member"><strong>${m.display_name||'Partner'}</strong><span>${r?.verse_read?'✅ Read':'⏳ Not yet'}</span></div>`;$("memberStatuses").appendChild(div)});const mine=readStatuses.find(x=>x.user_id===user.id);$("markRead").textContent=mine?.verse_read?"✓ Marked as read":"I’ve read today’s passage";}
-function renderChecklist(){$("checklist").innerHTML="";Object.entries(checklistLabels).forEach(([key,label])=>{const rec=checklist.find(x=>x.item_key===key);const automatic=key==='both_read';const checked=automatic?members.length===2&&members.every(m=>readStatuses.find(r=>r.user_id===m.user_id)?.verse_read):!!rec?.completed;const lab=document.createElement("label");lab.className="check "+(checked?"good":"");lab.innerHTML=`<input type="checkbox" ${checked?"checked":""} ${automatic?"disabled":""}><span><strong>${label}</strong>${automatic?'<br><span class="small">Completes automatically when both accounts have read the verse.</span>':''}</span>`;if(!automatic)lab.querySelector("input").onchange=async e=>{await saveChecklist(key,label,e.target.checked);await loadDay();await updateProgress()};$("checklist").appendChild(lab);});}
-$("markRead").onclick=async()=>{const mine=readStatuses.find(x=>x.user_id===user.id),has=!mine?.verse_read;const {error}=await sb.from('daily_member_status').upsert({couple_id:coupleId,day_number:current,user_id:user.id,verse_read:has,verse_read_at:has?new Date().toISOString():null},{onConflict:'couple_id,day_number,user_id'});if(error)alert(error.message);else await loadDay();};
-async function saveChecklist(key,label,completed){const {error}=await sb.from('daily_checklist').upsert({couple_id:coupleId,day_number:current,item_key:key,item_label:label,sort_order:Object.keys(checklistLabels).indexOf(key),completed,completed_by:completed?user.id:null,completed_at:completed?new Date().toISOString():null},{onConflict:'couple_id,day_number,item_key'});if(error)alert(error.message);}
-let saveTimer;function queueSave(){clearTimeout(saveTimer);$("syncState").textContent="Saving...";saveTimer=setTimeout(saveCurrent,500)}
+async function boot(){
+ const {data:{session}}=await sb.auth.getSession();user=session?.user||null;$("authView").classList.toggle('hidden',!!user);if(!user)return;
+ const {data:ms}=await sb.from('couple_members').select('couple_id,display_name').eq('user_id',user.id).maybeSingle();
+ if(!ms){$("setupView").classList.remove('hidden');return} coupleId=ms.couple_id;await loadMain();
+}
+async function loadMain(){
+ $("setupView").classList.add('hidden');$("authView").classList.add('hidden');$("mainView").classList.remove('hidden');
+ const [{data:d},{data:m}]=await Promise.all([
+   sb.from('devotional_days').select('*').order('day_number'),
+   sb.from('couple_members').select('user_id,display_name,joined_at').eq('couple_id',coupleId).order('joined_at')
+ ]);
+ days=d||[];members=m||[];const me=members.find(x=>x.user_id===user.id);$("welcome").textContent=`Welcome${me?.display_name?' '+me.display_name:''}. Your progress is synced to Supabase.`;
+ const requestedDay=Number(new URLSearchParams(location.search).get("day"));
+ const firstIncomplete=await updateProgress();
+ if(requestedDay>=1&&requestedDay<=45&&dayStates[requestedDay]?.state!=="locked") current=requestedDay;
+ else if(requestedDay>=1&&requestedDay<=45&&dayStates[requestedDay]?.state==="locked") current=firstIncomplete;
+ drawDays();await loadDay();await refreshNotificationButton();
+}
+async function updateProgress(){
+ const [{data:allStatuses,error:statusError},{data:allChecklist,error:checkError}]=await Promise.all([
+   sb.from('daily_member_status').select('day_number,user_id,verse_read').eq('couple_id',coupleId),
+   sb.from('daily_checklist').select('day_number,item_key,completed').eq('couple_id',coupleId)
+ ]);
+ if(statusError||checkError){console.error(statusError||checkError);return 1;}
+ const manualKeys=['discuss_questions','share_reflections','action_step','pray_together'];
+ dayStates={};
+ let firstIncomplete=1;
+ for(let day=1;day<=45;day++){
+   const bothRead=members.length===2&&members.every(m=>(allStatuses||[]).some(r=>r.day_number===day&&r.user_id===m.user_id&&r.verse_read));
+   const manualDone=manualKeys.every(key=>(allChecklist||[]).some(r=>r.day_number===day&&r.item_key===key&&r.completed));
+   const done=bothRead&&manualDone;
+   dayStates[day]={done,bothRead,manualDone};
+   if(done&&firstIncomplete===day)firstIncomplete=day+1;
+ }
+ if(firstIncomplete>45)firstIncomplete=45;
+ for(let day=1;day<=45;day++){
+   if(dayStates[day].done)dayStates[day].state='done';
+   else if(day===firstIncomplete)dayStates[day].state='ongoing';
+   else if(day>firstIncomplete)dayStates[day].state='locked';
+   else dayStates[day].state='ongoing';
+ }
+ const completed=Object.values(dayStates).filter(x=>x.done).length;
+ $("progressText").textContent=`${completed} / 45 completed`;
+ $("progressBar").style.width=`${completed/45*100}%`;
+ return firstIncomplete;
+}
+async function loadDay(){
+ $("syncState").textContent="Loading...";const day=days.find(x=>x.day_number===current);if(!day)return;
+ $("dayLabel").textContent=`Day ${current}`;$("theme").textContent=day.theme;$("reading").textContent="📖 "+day.reading;$("focus").textContent=day.focus;$("q1").textContent="1. "+day.question_1;$("q2").textContent="2. "+day.question_2;
+ const [rs,cl,en,re]=await Promise.all([
+   sb.from('daily_member_status').select('*').eq('couple_id',coupleId).eq('day_number',current),
+   sb.from('daily_checklist').select('*').eq('couple_id',coupleId).eq('day_number',current),
+   sb.from('devotional_entries').select('*').eq('couple_id',coupleId).eq('day_number',current).maybeSingle(),
+   sb.from('devotional_reflections').select('*').eq('couple_id',coupleId).eq('day_number',current).eq('user_id',user.id).maybeSingle()
+ ]);
+ readStatuses=rs.data||[];checklist=cl.data||[];entry=en.data||null;reflection=re.data||null;
+ $("reflection").value=reflection?.reflection||"";$("sharedNotes").value=entry?.shared_notes||"";$("sharedPrayer").value=entry?.shared_prayer||"";
+ renderReadStatus();renderChecklist();await updateProgress();drawDays();updateNavigationButtons();$("syncState").textContent="Cloud sync ready.";
+}
+function updateNavigationButtons(){
+ $("prevBtn").disabled=current<=1;
+ const isDone=!!dayStates[current]?.done;
+ $("nextBtn").disabled=current>=45||!isDone;
+ $("nextBtn").title=current>=45?'This is the final day.':(!isDone?'Finish all of today’s shared checklist items and both readings to unlock the next day.':'');
+ $("nextBtn").textContent=current>=45?'Finished':(isDone?'Next →':'🔒 Finish today first');
+}
+function renderReadStatus(){
+ $("memberStatuses").innerHTML="";
+ members.forEach(m=>{const r=readStatuses.find(x=>x.user_id===m.user_id);const div=document.createElement("div");div.className="status "+(r?.verse_read?"good":"warn");
+ div.innerHTML=`<div class="member"><strong>${m.display_name||'Partner'}</strong><span>${r?.verse_read?'✅ Read':'⏳ Not yet'}</span></div>`;$("memberStatuses").appendChild(div)});
+ const mine=readStatuses.find(x=>x.user_id===user.id);$("markRead").textContent=mine?.verse_read?"✓ Marked as read":"I’ve read today’s passage";
+}
+function renderChecklist(){
+ $("checklist").innerHTML="";
+ Object.entries(checklistLabels).forEach(([key,label])=>{
+   const rec=checklist.find(x=>x.item_key===key);const automatic=key==='both_read';
+   const checked=automatic?members.length===2&&members.every(m=>readStatuses.find(r=>r.user_id===m.user_id)?.verse_read):!!rec?.completed;
+   const lab=document.createElement("label");lab.className="check "+(checked?"good":"");
+   lab.innerHTML=`<input type="checkbox" ${checked?"checked":""} ${automatic?"disabled":""}><span><strong>${label}</strong>${automatic?'<br><span class="small">Completes automatically when both accounts have read the verse.</span>':''}</span>`;
+   if(!automatic)lab.querySelector("input").onchange=async e=>{await saveChecklist(key,label,e.target.checked);await loadDay()};
+   $("checklist").appendChild(lab);
+ });
+}
+$("markRead").onclick=async()=>{
+ const mine=readStatuses.find(x=>x.user_id===user.id),has=!mine?.verse_read;
+ const {error}=await sb.from('daily_member_status').upsert({couple_id:coupleId,day_number:current,user_id:user.id,verse_read:has,verse_read_at:has?new Date().toISOString():null},{onConflict:'couple_id,day_number,user_id'});
+ if(error)alert(error.message);else await loadDay();
+};
+async function saveChecklist(key,label,completed){
+ const {error}=await sb.from('daily_checklist').upsert({couple_id:coupleId,day_number:current,item_key:key,item_label:label,sort_order:Object.keys(checklistLabels).indexOf(key),completed,completed_by:completed?user.id:null,completed_at:completed?new Date().toISOString():null},{onConflict:'couple_id,day_number,item_key'});
+ if(error)alert(error.message);
+}
+let saveTimer;
+function queueSave(){clearTimeout(saveTimer);$("syncState").textContent="Saving...";saveTimer=setTimeout(saveCurrent,500)}
 $("reflection").addEventListener("input",queueSave);$("sharedNotes").addEventListener("input",queueSave);$("sharedPrayer").addEventListener("input",queueSave);
-async function saveCurrent(){if(!coupleId||!user)return;const results=await Promise.all([sb.from('devotional_reflections').upsert({couple_id:coupleId,day_number:current,user_id:user.id,reflection:$("reflection").value},{onConflict:'couple_id,day_number,user_id'}),sb.from('devotional_entries').upsert({couple_id:coupleId,day_number:current,shared_notes:$("sharedNotes").value,shared_prayer:$("sharedPrayer").value,updated_by:user.id},{onConflict:'couple_id,day_number'})]);const err=results.find(x=>x.error)?.error;$("syncState").textContent=err?("Save error: "+err.message):"Saved to Supabase ✓";}
-$("pingBtn").onclick=async()=>{const partner=members.find(x=>x.user_id!==user.id);if(!partner)return alert("Your partner hasn't joined yet.");const {data:last}=await sb.from('devotional_pings').select('created_at').eq('couple_id',coupleId).eq('sender_user_id',user.id).eq('recipient_user_id',partner.user_id).order('created_at',{ascending:false}).limit(1).maybeSingle();if(last?.created_at&&Date.now()-new Date(last.created_at).getTime()<15*60*1000)return alert("You already sent a reminder recently. Try again in a few minutes.");const me=members.find(x=>x.user_id===user.id);const message="Time for our devotional ❤️";const {error}=await sb.from('devotional_pings').insert({couple_id:coupleId,day_number:current,sender_user_id:user.id,recipient_user_id:partner.user_id,message});if(error)return alert(error.message);const {data:pushData,error:pushError}=await sb.functions.invoke('send-devotional-push',{body:{recipient_user_id:partner.user_id,day_number:current,title:'45 Days Pre Marriage Devotional',body:`${me?.display_name||'Your partner'}: ${message}`}});if(pushError){console.error(pushError);return alert("Reminder saved, but push delivery failed. Your partner can still see the reminder in the app.");}if(!pushData?.sent)return alert("Reminder saved. Your partner has not enabled notifications on a device yet.");alert(`Reminder sent to ${pushData.sent} device${pushData.sent===1?'':'s'} ✓`);};
-$("prevBtn").onclick=async()=>{await saveCurrent();if(current>1){current--;await loadDay();window.scrollTo(0,0)}};$("nextBtn").onclick=async()=>{await saveCurrent();if(current<45){current++;await loadDay();window.scrollTo(0,0)}};
-function drawDays(){$("daysGrid").innerHTML="";for(let i=1;i<=45;i++){const b=document.createElement("button");b.textContent=i;b.className="daybtn"+(i===current?" active":"");b.onclick=async()=>{await saveCurrent();current=i;await loadDay();window.scrollTo(0,0)};$("daysGrid").appendChild(b)}}
+async function saveCurrent(){
+ if(!coupleId||!user)return;
+ const results=await Promise.all([
+   sb.from('devotional_reflections').upsert({couple_id:coupleId,day_number:current,user_id:user.id,reflection:$("reflection").value},{onConflict:'couple_id,day_number,user_id'}),
+   sb.from('devotional_entries').upsert({couple_id:coupleId,day_number:current,shared_notes:$("sharedNotes").value,shared_prayer:$("sharedPrayer").value,updated_by:user.id},{onConflict:'couple_id,day_number'})
+ ]);
+ const err=results.find(x=>x.error)?.error;$("syncState").textContent=err?("Save error: "+err.message):"Saved to Supabase ✓";
+}
+$("pingBtn").onclick=async()=>{
+ const partner=members.find(x=>x.user_id!==user.id);if(!partner)return alert("Your partner hasn't joined yet.");
+ const {data:last}=await sb.from('devotional_pings').select('created_at').eq('couple_id',coupleId).eq('sender_user_id',user.id).eq('recipient_user_id',partner.user_id).order('created_at',{ascending:false}).limit(1).maybeSingle();
+ if(last?.created_at && Date.now()-new Date(last.created_at).getTime()<15*60*1000)return alert("You already sent a reminder recently. Try again in a few minutes.");
+ const {data:me}=await sb.from('couple_members').select('display_name').eq('couple_id',coupleId).eq('user_id',user.id).maybeSingle();
+ const message="Time for our devotional ❤️";
+ const {error}=await sb.from('devotional_pings').insert({couple_id:coupleId,day_number:current,sender_user_id:user.id,recipient_user_id:partner.user_id,message});
+ if(error)return alert(error.message);
+ const {error:pushError}=await sb.functions.invoke('send-devotional-push',{body:{recipient_user_id:partner.user_id,day_number:current,message,sender_name:me?.display_name||'Your partner'}});
+ if(pushError){console.error(pushError);alert("Reminder was saved, but the push notification could not be delivered. Make sure your partner enabled notifications.");}else alert("Push reminder sent to your partner ❤️");
+};
+$("prevBtn").onclick=async()=>{await saveCurrent();if(current>1){current--;await loadDay();window.scrollTo(0,0)}};
+$("nextBtn").onclick=async()=>{await saveCurrent();if(current<45&&dayStates[current]?.done){current++;await loadDay();window.scrollTo(0,0)}};
+function drawDays(){
+ $("daysGrid").innerHTML="";
+ for(let i=1;i<=45;i++){
+   const state=dayStates[i]?.state||'locked';
+   const b=document.createElement("button");
+   b.type='button';
+   b.className=`daybtn ${state}${i===current?' active':''}`;
+   b.disabled=state==='locked';
+   const icon=state==='done'?'✓':state==='ongoing'?'●':'🔒';
+   b.innerHTML=`<span>${i}</span><span class="state-icon">${icon}</span>`;
+   b.setAttribute('aria-label',`Day ${i}: ${state==='done'?'done':state==='ongoing'?'ongoing':'not started and locked'}`);
+   if(state!=='locked')b.onclick=async()=>{await saveCurrent();current=i;await loadDay();window.scrollTo(0,0)};
+   $("daysGrid").appendChild(b);
+ }
+}
 if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(console.error));
 boot();
 </script>
